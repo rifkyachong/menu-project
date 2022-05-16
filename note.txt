@@ -1,0 +1,85 @@
+debug:
+- tombol all, load all kalo bisa mengurutkan berdasarkan kategori, bukan id
+
+add feature:
+- tambah fitur btn dikasih warna kalau terpilih
+- fitur semacam halaman apabila menunya terlalu banyak
+
+page load execution: 
+
+
+
+1. get all the categories: ditaruh global saja?. pakai metode map(). fungsi reducer langsung didefinisikan disitu. 
+2. create button and give it's functionality: kasih pembeda yang mana yang dipilih. ditaruh didalam event listener DOMLoaded. 3 fase: get category, map dari array jadi innerHTML button lalu append, buat event listener, buat fungsi filterByCategory(e, )  
+
+
+3. loadAll function: argument database. 
+
+
+
+
+3. create page button to handle too much menu: fungsionality ini akan dibuat secara dinamik di setiap fungsi yang dipanggil oleh loadall dan filterbycategory.
+
+4. 
+
+
+4. Buat fitur semacam limit article per page: Array.slice().join(""). 
+
+5. Buat fungsi displayMenu(slice of arr of innerhtml) => void:
+
+///////
+* Buat fungsi filterByCategory(e, ) => arr of filtered html: 
+
+* Buat fungsi filterBySearchValue(e, ) => arr of filtered html: 
+
+* Buat fungsi displayMenu(slice of arr of innerhtml) => void:
+
+* Buat fungsi loadAll() => arr of unfiltered html:
+
+* Buat fungsi createCategoryBtn() => buttons in html: inline atau buat fungsinya saja?
+
+* Buat fungsi createPageBtn() => buttons for page: 
+
+Batasan Masalah:
+1. Pakai saja global variable, untuk saat ini.
+2. asumsi jumlah menu tidak terlalu banyak sehingga tidak perlu terlalu banyak page. tidak ada page 1~10, page 11~20, etc. 
+
+1. Buat list of categories sebagai const global variable menggunakan reduce(). function ditaruh inline saja. 
+2. Buat fungsi createCategoryBtn() lalu eksekusi. 
+  - create innerHTML button
+  - add event listener untuk semua btn. pakai foreach, tidak bisa pakai map. loadAll untuk all, filterByCategory untuk setiap category. queryselectorall untuk bottons global atau local???
+3. Buat fungsi filterByCategory(e) 
+  - dapatkan category yang dimaksud
+  - ganti class jadi sehingga botton berwarna seolah-olah seperti terpilih
+  - tambahkan global variable untuk menyimpan array of string of innerHTML text (filtered ataupun unfiltered);
+  ? buat page tabs berdasarkan jumlah item yang ada serta limit menu per page. global variable: limit.
+  - panggil movePage()
+
+3A. buat fungsi filterBySearchValue()
+
+4. Buat fungsi loadAll() prinsipnya mirip filterByCategory
+
+5. Buat fungsi createPageBtn(length)
+  - dynamicly create page btn, simpan curPage-id sebagai atribute di htmlnya
+  - add event listener to every btn using forEach, with a function movePage
+
+6. movePage(curPage) 
+  - ganti currentIndex;
+  - panggil fungsi displayMenu
+  - warnain botton yang terpilih
+  - panggil display botton
+
+7. buat fungsi displayMenu(arr of string inner html) return void
+
+
+
+
+
+8. Buat search Engine
+- pakai property value saja, gak usah getAttr
+
+
+value =" teh   jeruk "
+regex = value.trim().replace()
+
+/(\bteh|\bjeruk|)/

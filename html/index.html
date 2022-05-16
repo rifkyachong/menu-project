@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta charset is required -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link my local stylesheet-->
+    <link rel="stylesheet" href="../css/menu_style.css">
+    <!-- link fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <title>Menu Tinyproject</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6578082cab.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <h1 id="title">Our Menu</h1>
+        <div id="short-underline"></div>
+        <nav class="nav nav-filter">
+          <div class="nav category-bar">
+            <!-- <button class="btn btn-sm category-btn" ctgry-id=""></button> -->
+          </div>
+          <div class="input-group nav-search">
+            <input type="search" name="search-menu" id="search-menu" placeholder="search for menu">
+            <i class="fas fa-search" id="search-icon"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="container-fluid">
+        <div class="menu-section">
+          <!-- <article class="menu-article" id="">
+            <img class="menu-image" src="">
+            <div class="menu-description">
+              <div class="menu-header">
+                <div class="menu-name"></div>
+                <div class="menu-price"></div>
+              </div>
+              <div class="menu-detail"></div>
+            </div>
+            <div class="read-more"><span>read more</span></div>
+          </article> -->
+        </div>
+        <div class="info">
+          <p id="no-match-info"><i class="fas fa-info-circle" id="no-match-icon"></i> Sorry, there is no menu matched with searched value, please try again.</p>
+        </div>
+        <div class="page-btn-bar">
+          <button class="btn page-btn selected" id="1">1</button>
+          <button class="btn page-btn" id="2">2</button>
+          <button class="btn page-btn" id="3">3</button>
+          <!-- <button class="btn page-btn" page-id=""></button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="filter-blur hidden"></div>
+  <div class="modalbox-overlay hidden">
+    <img src="" class="modal-image">
+    <div class="modal-description">
+      <div class="modal-header">
+        <div class="menu-name"></div>
+        <div class="menu-price"></div>
+      </div>
+      <div class="modal-detail menu-detail"></div>
+    </div>
+    <button class="btn btn-sm" id="exit-btn"><i class="fas fa-times fa-2x"></i></button>
+  </div>
+    
+    <!-- link bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- link my local script -->
+    <script src="../js/menu_script.js"></script>
+
+
+  </body>
+</html>
